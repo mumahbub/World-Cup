@@ -1,0 +1,491 @@
+/* importing font  */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@700&display=swap');
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+main {
+    width: 1300px;
+    margin: 50px auto 0px;
+}
+
+/* style for hader section */
+.header-section {
+    display: flex;
+    justify-content: center;
+    border: 1px solid gray;
+    background-color: rgb(17, 17, 17);
+    padding: 30px 80px 0 80px;
+    border-radius: 20px;
+}
+
+.header-section div h1 {
+    color: white;
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+
+.header-section div p {
+    color: white;
+    font-weight: 200px;
+    font-size: 12px;
+}
+
+.header-section div img {
+    margin-left: 40px;
+    width: 550px;
+    height: 600px;
+}
+
+/* style for the button */
+.button {
+    padding: 10px 15px;
+    background-color: #FF2F9E;
+    border-radius: 10px;
+    color: white;
+    transition: transform 1s;
+    font-size: 20px;
+}
+
+.button:hover {
+    transform: scale(1.2);
+    background-color: rgb(250, 56, 56)
+}
+
+/* style on the blogs & matches schedule. */
+.blog {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 130px;
+}
+
+.blog div a {
+    text-decoration: none;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    background-color: black;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+
+.item-name {
+    margin-top: 28px;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    margin-inline: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1000px;
+
+}
+
+.match-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 80px;
+    row-gap: 100px;
+}
+
+.match-item div h4,
+p {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.match-items div p {
+    margin-top: 0;
+    font-size: 10px;
+}
+
+.match {
+    display: flex;
+}
+
+.ex-button {
+    display: none;
+}
+
+/* style for the footer */
+footer {
+    margin-top: 50px;
+    height: 400px;
+    background-color: black;
+}
+
+.footer-heading {
+    color: white;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.fa-instagram-square,
+.fa-github,
+.fa-facebook {
+    font-size: 50px;
+    padding: 10px;
+}
+
+footer div hr {
+    width: 1300px;
+    color: #FFFFFF1A;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.footer-content {
+    color: white;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+/* responsiveness with midea query */
+
+@media screen and (max-width: 688px) {
+    main {
+        width: 100%;
+        margin: 0px auto 0px;
+    }
+
+    /* responsiveness for the hader section. */
+    .header-section {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid gray;
+        background-color: rgb(17, 17, 17);
+        /* padding: 30px 80px 0 80px; */
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .header-section div h1 {
+        color: white;
+        font-size: 20px;
+        line-height: 33px;
+        margin-bottom: 20px;
+    }
+
+    .header-section div p {
+        color: white;
+        font-size: 10px;
+    }
+
+    .header-section div img {
+        margin-left: 40px;
+        width: 250px;
+        height: 240px;
+    }
+
+    /* style for the button */
+    .button {
+        padding: 10px 15px;
+        background-color: #FF2F9E;
+        border-radius: 10px;
+        color: white;
+        transition: transform 1s;
+        font-size: 20px;
+    }
+
+    .button:hover {
+        transform: scale(1.2);
+        background-color: rgb(250, 56, 56)
+    }
+
+    /* responsiveness for the content section */
+
+    .blog {
+        display: flex;
+        /* justify-content: space-evenly; */
+        flex-direction: column;
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+
+    .blog div a {
+        text-decoration: none;
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 250px;
+        /* background-color: black; */
+        /* border-radius: 5px; */
+        /* margin-right: 25px; */
+    }
+
+    .item-name {
+        margin-top: 28px;
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+        /* margin-inline: 15px; */
+        /* border: 1px solid rgb(0, 0, 0); */
+        border-radius: 10px;
+        /* background-color: white; */
+        text-align: center;
+    }
+
+    .items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* width: 1000px; */
+        width: 50%;
+
+    }
+
+    .match-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 80px;
+        row-gap: 100px;
+    }
+
+    .match-item div h4,
+    p {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .match-items div p {
+        margin-top: 0;
+        font-size: 10px;
+    }
+
+    .match {
+        display: flex;
+    }
+
+    .ex-button {
+        display: none;
+    }
+
+    /* responsiveness for footer */
+    /* style for the footer */
+    footer {
+        margin-top: 50px;
+        height: 800px;
+        background-color: black;
+    }
+
+    .footer-heading {
+        color: white;
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .fa-instagram-square,
+    .fa-github,
+    .fa-facebook {
+        font-size: 50px;
+        padding: 10px;
+    }
+
+    footer div hr {
+        width: 50%;
+        color: #FFFFFF1A;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .footer-content {
+        color: white;
+        font-size: 10px;
+        margin-top: 15px;
+    }
+}
+
+/* responsiveness with tablet */
+
+@media only screen and (max-width: 992px) and (min-width: 689px) {
+    main {
+        width: 100%;
+        margin: 0px auto 0px;
+    }
+
+    /* responsiveness for the hader section. */
+    .header-section {
+        display: flex;
+        justify-content: center;
+        /* flex-direction: column; */
+        border: 1px solid gray;
+        background-color: rgb(17, 17, 17);
+        /* padding: 30px 80px 0 80px; */
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .header-section div h1 {
+        color: white;
+        font-size: 20px;
+        line-height: 33px;
+        /* margin-bottom: 20px; */
+    }
+
+    .header-section div p {
+        color: white;
+        font-size: 10px;
+    }
+
+    .header-section div img {
+        margin-left: 40px;
+        width: 320px;
+        height: 340px;
+    }
+
+    /* style for the button */
+    .button {
+        margin-top: 20px;
+        padding: 10px 15px;
+        background-color: #FF2F9E;
+        border-radius: 10px;
+        color: white;
+        transition: transform 1s;
+        font-size: 20px;
+    }
+
+    .button:hover {
+        transform: scale(1.2);
+        background-color: rgb(250, 56, 56)
+    }
+
+    /* responsiveness for the content section */
+
+    .blog {
+        display: flex;
+        /* justify-content: space-evenly; */
+        flex-direction: column;
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+
+    .blog div a {
+        text-decoration: none;
+    }
+
+    .item {
+        display: flex;
+        /* flex-direction: column; */
+        width: 300px;
+        height: 50px;
+        background-color: white;
+        /* border-radius: 5px; */
+        /* margin-right: 25px; */
+        flex-direction: row;
+        margin-bottom: 100px;
+    }
+
+    .item-name {
+        margin-top: 28px;
+        color: rgb(0, 0, 0);
+        padding: 20px 80px;
+        border-radius: 10px;
+        text-align: center;
+        border: 0px solid rgb(201, 201, 201);
+        /* padding: 10px 20px;
+    margin-inline: 15px;
+    border-radius: 10px;
+    background-color: white; */
+    }
+
+    .items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* width: 1000px; */
+        width: 70%;
+        column-gap: 100px;
+
+    }
+
+    .match-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 80px;
+        row-gap: 100px;
+    }
+
+    .match-item div h4,
+    p {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .match-items div p {
+        margin-top: 0;
+        font-size: 10px;
+    }
+
+    .match {
+        display: flex;
+    }
+
+    .ex-button {
+        text-align: center;
+    }
+
+
+    /* responsiveness for footer */
+    /* style for the footer */
+    footer {
+        margin-top: 50px;
+        height: 400px;
+        background-color: black;
+    }
+
+    .footer-heading {
+        color: white;
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .fa-instagram-square,
+    .fa-github,
+    .fa-facebook {
+        font-size: 50px;
+        padding: 10px;
+    }
+
+    footer div hr {
+        width: 50%;
+        color: #FFFFFF1A;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .footer-content {
+        color: white;
+        font-size: 10px;
+        margin-top: 15px;
+    }
+}
