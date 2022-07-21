@@ -44,7 +44,7 @@ main {
 /* style for the button */
 .button {
     padding: 10px 15px;
-    background-color: #FF2F9E;
+    background-color: #007400;
     border-radius: 10px;
     color: white;
     transition: transform 1s;
@@ -53,7 +53,7 @@ main {
 
 .button:hover {
     transform: scale(1.2);
-    background-color: rgb(250, 56, 56)
+    background-color: rgb(10, 0, 198)
 }
 
 /* style on the blogs & matches schedule. */
@@ -199,7 +199,7 @@ footer div hr {
     /* style for the button */
     .button {
         padding: 10px 15px;
-        background-color: #FF2F9E;
+        background-color: #007400;
         border-radius: 10px;
         color: white;
         transition: transform 1s;
@@ -208,7 +208,7 @@ footer div hr {
 
     .button:hover {
         transform: scale(1.2);
-        background-color: rgb(250, 56, 56)
+        background-color:rgb(10, 0, 198)
     }
 
     /* responsiveness for the content section */
